@@ -1,0 +1,4 @@
+/* Hide out-of-the-box no search results card */
+prm-no-search-result > md-card.default-card {
+  display: none;
+}

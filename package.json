@@ -1,0 +1,22 @@
+{
+  "name": "primo-explore-custom-no-search-results",
+  "version": "1.0.0",
+  "description": "ExLibris Primo New UI plugin for creating a custom no results template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyulibraries/primo-explore-custom-no-search-results.git"
+  },
+  "keywords": [
+    "primo-explore"
+  ],
+  "author": "Barnaby Alter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nyulibraries/primo-explore-custom-no-search-results/issues"
+  },
+  "homepage": "https://github.com/nyulibraries/primo-explore-custom-no-search-results#readme"
+}
