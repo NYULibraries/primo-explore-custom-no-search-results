@@ -38,7 +38,7 @@ import 'primo-explore-custom-no-search-results';
 You'll need to set a `customNoSearchResultsTemplateUrl` value in your `main.js` to point to your custom no search results template:
 
 ```js
-app.value('customNoSearchResultsTemplateUrl', 'custom/MY_VIEW_ID/html/noSearchResult.html');
+app.value('customNoSearchResultsTemplateUrl', 'custom/MY_VIEW_ID/html/customNoSearchResults.html');
 ```
 
 ## Example
@@ -50,7 +50,7 @@ import 'primo-explore-custom-no-search-results';
 
 let app = angular.module('viewCustom', ['customNoSearchResults']);
 
-app.value('customNoSearchResultsTemplateUrl', 'custom/MY_VIEW_ID/html/noSearchResult.html');
+app.value('customNoSearchResultsTemplateUrl', 'custom/MY_VIEW_ID/html/customNoSearchResults.html');
 
 ```
 
