@@ -1,5 +1,8 @@
 # primo-explore-custom-no-search-results
 
+[![Build Status](https://travis-ci.org/NYULibraries/primo-explore-custom-no-search-results.svg?branch=master)](https://travis-ci.org/NYULibraries/primo-explore-custom-no-search-results)
+[![npm version](https://img.shields.io/npm/v/primo-explore-custom-no-search-results.svg)](https://www.npmjs.com/package/primo-explore-custom-no-search-results)
+
 ## Description
 
 Create a custom no results templates.
