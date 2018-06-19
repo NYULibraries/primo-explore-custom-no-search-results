@@ -1,12 +1,13 @@
 module.exports = function(config) {
   config.set({
     frameworks: ['jasmine'],
-    reporters: ['spec'],
+    reporters: ['spec', 'coverage', 'coveralls'],
     browsers: ['PhantomJS'],
+    basePath: 'src/',
     files: [
       //libraries
-      'node_modules/angular/angular.js',
-      'node_modules/angular-mocks/angular-mocks.js',
+      '../node_modules/angular/angular.js',
+      '../node_modules/angular-mocks/angular-mocks.js',
       //module
       'js/**/*.js',
       //tests
@@ -15,12 +16,27 @@ module.exports = function(config) {
       'spec/**/*.html',
     ],
     preprocessors: {
-      'js/**/*.js': ['babel'],
-      'spec/**/*.spec.js': ['babel'],
+      'js/**/*.js': ['webpack', 'sourcemap'],
+      'spec/**/*.spec.js': ['babel', 'sourcemap'],
       'spec/**/*.html': ['ng-html2js'],
     },
     ngHtml2JsPreprocessor: {
       stripPrefix: "spec/",
+    },
+    coverageReporter: {
+      type: 'lcov', // lcov or lcovonly are required for generating lcov.info files
+      dir: 'coverage/'
+    },
+    webpack: {
+      mode: 'development',
+      module: {
+        rules: [
+          {
+            loader: 'babel-loader'
+          }
+        ]
+      },
+      devtool: 'inline-source-map'
     }
   });
 };
