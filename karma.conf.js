@@ -5,14 +5,23 @@ module.exports = function(config) {
     browsers: ['PhantomJS'],
     basePath: 'src/',
     files: [
+      //libraries
       '../node_modules/angular/angular.js',
       '../node_modules/angular-mocks/angular-mocks.js',
+      //module
       'js/**/*.js',
-      'spec/**/*.spec.js',
+      //tests
+      'spec/**/*.js',
+      //external templates
+      'spec/**/*.html',
     ],
     preprocessors: {
       'js/**/*.js': ['webpack', 'sourcemap'],
       'spec/**/*.spec.js': ['babel', 'sourcemap'],
+      'spec/**/*.html': ['ng-html2js'],
+    },
+    ngHtml2JsPreprocessor: {
+      stripPrefix: "spec/",
     },
     coverageReporter: {
       type: 'lcov', // lcov or lcovonly are required for generating lcov.info files
