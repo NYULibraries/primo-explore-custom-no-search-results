@@ -1,6 +1,6 @@
 {
   "name": "primo-explore-custom-no-search-results",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ExLibris Primo New UI plugin for creating a custom no results template",
   "main": "./dist/index.js",
   "repository": {
