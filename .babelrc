@@ -1,1 +1,17 @@
-{ "presets": ["es2015"] }
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": "last 2 versions, not dead"
+    }]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        ["istanbul", {
+          "exclude": ["**/*.spec.js"],
+        }],
+      ]
+    },
+  },
+  "comments": false,
+}
