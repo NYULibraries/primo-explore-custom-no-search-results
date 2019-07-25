@@ -1,6 +1,6 @@
 # primo-explore-custom-no-search-results
 
-[![Build Status](https://travis-ci.org/NYULibraries/primo-explore-custom-no-search-results.svg?branch=master)](https://travis-ci.org/NYULibraries/primo-explore-custom-no-search-results)
+[![CircleCI](https://circleci.com/gh/NYULibraries/primo-explore-custom-no-search-results.svg?style=svg)](https://circleci.com/gh/NYULibraries/primo-explore-custom-no-search-results)
 [![npm version](https://img.shields.io/npm/v/primo-explore-custom-no-search-results.svg)](https://www.npmjs.com/package/primo-explore-custom-no-search-results)
 [![Coverage Status](https://coveralls.io/repos/github/NYULibraries/primo-explore-custom-no-search-results/badge.svg?branch=master)](https://coveralls.io/github/NYULibraries/primo-explore-custom-no-search-results?branch=master)
 
