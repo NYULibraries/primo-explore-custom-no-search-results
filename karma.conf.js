@@ -17,10 +17,15 @@ module.exports = function (config) {
       require.resolve('angular-mocks/angular-mocks.js'),
       'src/index.js',
       'src/spec/**/*.spec.js',
+      'src/spec/**/*.html',
     ],
     preprocessors: {
       'src/index.js': ['webpack', 'sourcemap'],
       'src/spec/**/*.spec.js': ['webpack', 'sourcemap'],
+      'src/spec/**/*.html': ['ng-html2js'],
+    },
+    ngHtml2JsPreprocessor: {
+      stripPrefix: "src/spec/",
     },
     webpack: {
       mode: 'development',
